@@ -8,19 +8,14 @@ import math
 
 def square_rectangle(a, b):      #Площадь прямоугольника
     return a * b
-
 def square_triangle(base, height):         #Площадь треугольника
     return 0.5 * base * height
-
 def square_circle(radius):               #Площадь круга
     return math.pi * radius**2
-
 def square_square(side):         #Площадь квадрата
     return side**2
-
 def square_polygon(side, radius, corners):       #Площадь многоугольника
     return (1/2)*corners*side*radius
-
 def square():       #Пользователь выбирает, какая ему нужна фигура, а затем по ней вводит данные
     print("Выберите фигуру:")
     print("1. Прямоугольник")
@@ -28,7 +23,7 @@ def square():       #Пользователь выбирает, какая ем�
     print("3. Круг")
     print("4. Квадрат")
     print("5. Правильный многоугольник")
-
+    
     choice = input("Введите номер фигуры: ")
 
     if choice == "1":
@@ -60,17 +55,13 @@ square()
 
 def calculate_sum(array):
     return sum(array)
-
 def calculate_average(array):
     return sum(array) / len(array)
-
 def calculate_statistics():
     arrays = []
-
     for i in range(3):
         array = []
         size = int(input(f"Введите размер массива {i+1}: "))
-
         for j in range(size):
             element = int(input(f"Введите элемент {j+1} массива {i+1}: "))
             array.append(element)
