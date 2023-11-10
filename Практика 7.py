@@ -93,26 +93,25 @@ calculate_statistics()
 
 
 """Задание 1"""
-def task(a, b, c, n):
-    lst = [2, 2, 1]  # список из цифр
+def Y(a, b, c, n):
+    List = [4, 2, 7, 9, 6, 3]  # список из цифр
     count = 0
-    
-    for i1 in lst:  # каждая цифра должна побывать на 1-м месте
-        for i2 in lst:  # каждая цифра должна побывать на 2-м месте
-            for i3 in lst:  # каждая цифра должна побывать на 3-м месте
-                z = i3 * 100 + i2 * 10 + i1  # воспроизводим число
-                if z >= 100 and z <= n:  # проверяем
+    for n1 in List:  # каждая цифра должна побывать на 1-м месте
+        for n2 in List:  # каждая цифра должна побывать на 2-м месте
+            for n3 in List:  # каждая цифра должна побывать на 3-м месте
+                x = n3 * 100 + n2 * 10 + n1  # воспроизводим число
+                if x >= 100 and x <= n:  # проверяем
                     count += 1
     return count
 
-print(task(1, 2, 3, 900))
+print(Y(1, 2, 3, 900))
 
 """Задание 2"""
-def str_rvs (str):
+def REVERSE(str):
     word = str.split()  # Разбиваем строку на слова
-    str_rvs  = ' '.join(reversed(word)) # Переворачиваем порядок слов и объединяем их обратно
-    return str_rvs
+    str_reverse  = ' '.join(reversed(word)) # Переворачиваем порядок слов и объединяем их обратно
+    return str_reverse
 
-str = input('Введите строку:')
-res = str_rvs(str) # Вызов ф-ции и вывод результата
-print('Результат:', res)
+stroka = input('Введите строку:')
+result = str_rvs(str) # Вызов ф-ции и вывод результата
+print('Результат:', result)
