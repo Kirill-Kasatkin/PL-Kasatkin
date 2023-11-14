@@ -2,26 +2,19 @@
 
 
 """Задание 1"""
-
-
 import math
 
-def square_rectangle(a, b):      #Площадь прямоугольника
+def square_rectangle(a, b):     
     return a * b
-
-def square_triangle(base, height):         #Площадь треугольника
+def square_triangle(base, height):         
     return 0.5 * base * height
-
-def square_circle(radius):               #Площадь круга
+def square_circle(radius):             
     return math.pi * radius**2
-
-def square_square(side):         #Площадь квадрата
+def square_square(side):        
     return side**2
-
-def square_polygon(side, radius, corners):       #Площадь многоугольника
+def square_polygon(side, radius, corners):       
     return (1/2)*corners*side*radius
-
-def square():       #Пользователь выбирает, какая ему нужна фигура, а затем по ней вводит данные
+def square():      
     print("Выберите фигуру:")
     print("1. Прямоугольник")
     print("2. Треугольник")
@@ -55,22 +48,18 @@ def square():       #Пользователь выбирает, какая ем�
 
 square()
 
+
+
 """Задание 2"""
-
-
-def calculate_sum(array):
+def summa(array):
     return sum(array)
-
-def calculate_average(array):
+def average_value(array):
     return sum(array) / len(array)
-
-def calculate_statistics():
+def function():
     arrays = []
-
     for i in range(3):
         array = []
-        size = int(input(f"Введите размер массива {i+1}: "))
-
+        size = int(input(f"Введите размер массива {i+1} не больше 15: "))
         for j in range(size):
             element = int(input(f"Введите элемент {j+1} массива {i+1}: "))
             array.append(element)
@@ -79,8 +68,8 @@ def calculate_statistics():
 
     for i, array in enumerate(arrays):
         print(f"Массив {i+1}:")
-        print("Сумма элементов:", calculate_sum(array))
-        print("Среднее арифметическое значение:", calculate_average(array))
+        print("Сумма элементов:", sum(array))
+        print("Среднее арифметическое значение:", average_value(array))
         print()
 
-calculate_statistics()
+function()
