@@ -44,8 +44,8 @@ for i in range(N):
     for i in range(M):
         A.append(random.randint(-9, 9))
     B.append(A)
+    
 print("Начальная матрица B:")
-
 for row in B:
     for elem in row:
         print(elem, end=' ')
