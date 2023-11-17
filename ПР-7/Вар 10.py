@@ -2,7 +2,7 @@
 
 
 """Задание 1"""
-n = int(input())
+n = int(input("Введите число n от 211 до 229 включительно: "))
 a, b, c = input(), input(), input()
 
 def chisla(a, b, c, N):
