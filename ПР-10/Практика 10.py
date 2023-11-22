@@ -8,9 +8,9 @@ for i in range(n):
         B.append(random.randint(-9, 9))
     A.append(B)
 
-with open('C:\\Users\\DedKir\\Desktop\\Языки программировния\\Практика\\Касаткин_УБ-32_vvod.txt', 'w') as testfile:
+with open('C:\\Users\\DedKir\\Desktop\\Языки программировния\\Практика\\Касаткин_УБ-32_vvod.txt', 'w') as vvod:
     for row in A:
-        testfile.write(' '.join([str(a) for a in row]) + '\n')
+        vvod.write(' '.join([str(a) for a in row]) + '\n')
 
 
 with open("C:\\Users\\DedKir\\Desktop\\Языки программировния\\Практика\\Касаткин_УБ-32_vivod.txt", "w") as vivod:
